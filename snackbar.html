@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snackbar</title>
+    <script type="module" crossorigin src="/timer-snackbar/snackbar.js"></script>
+    <link rel="modulepreload" crossorigin href="/timer-snackbar/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/timer-snackbar/assets/vendor-BbSUbo7J.js">
+    <link rel="stylesheet" crossorigin href="/timer-snackbar/assets/vendor-C1gPI-5C.css">
+    <link rel="stylesheet" crossorigin href="/timer-snackbar/assets/snackbar-BTpOPGco.css">
+    <link rel="stylesheet" crossorigin href="/timer-snackbar/assets/style-CArFLMZo.css">
+  </head>
+  <body class="section">
+    <form class="form">
+      <label for="delay" class="delay-label"> Delay (ms)</label>
+      <input class="delay" id="delay" type="number" name="delay" required />
+
+      <fieldset>
+        <legend>State</legend>
+        <label class="label">
+          <input
+            class="radio"
+            type="radio"
+            name="state"
+            value="fulfilled"
+            required
+          />
+          Fulfilled
+        </label>
+        <label class="label">
+          <input
+            class="radio"
+            type="radio"
+            name="state"
+            value="rejected"
+            required
+          />
+          Rejected
+        </label>
+      </fieldset>
+
+      <button class="btn" type="submit">Create notification</button>
+    </form>
+
+  </body>
+</html>
